@@ -9,35 +9,28 @@
 <body>
   <section id="weather-dashboard">
     <h1>Weather Dashboard</h1>
-    
-    <!-- Search Form -->
     <form id="search-form">
-      <label for="city-input">Enter City:</label>
+      <label for="city-input">Search for City:</label>
       <input type="text" id="city-input" required>
       <button type="submit">Search</button>
     </form>
-
-    <!-- Search History -->
     <div id="search-history">
-      <h2>Search History</h2>
+      <h2>History</h2>
       <ul id="history-list"></ul>
     </div>
-
-    <!-- Current Weather -->
-    <div id="current-weather">
-        <section id="current-weather">
+    <article id="current-weather">
             <h2>Current Weather</h2>
             <p id="temperature">Temperature: </p>
             <p id="humidity">Humidity: </p>
             <p id="wind-speed">Wind Speed: </p>
-        </section>
-      <!-- Display current weather details here -->
-    </div>
-
-    <!-- 5-Day Forecast -->
+    </article>
     <div id="forecast">
+        <h2> 5 day-forecast</h2>
         <div id="forecast-container"></div>
-      <!-- Display 5-day forecast details here -->
+        <div id="forecast-dropdown"></div>
+      </div>
     </div>
   </section>
   <script src="script.js"></script>
+  </body>
+  </html>
