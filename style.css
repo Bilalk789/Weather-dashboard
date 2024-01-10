@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  #weather-dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  /* Search Form Styles */
+  #search-form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 8px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Search History Styles */
+  #search-history {
+    margin-bottom: 20px;
+  }
+  
+  #history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #history-list li {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #007BFF;
+    text-decoration: underline;
+  }
+  
+  /* Current Weather Styles */
+  #current-weather {
+    margin-bottom: 20px;
+  }
+  
+  /* Forecast Styles */
+  #forecast {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .forecast-item {
+    flex: 1 1 calc(20% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 600px) {
+    #forecast {
+      flex-direction: column;
+    }
+  
+    .forecast-item {
+      flex: 1 1 100%;
+    }
+  }
